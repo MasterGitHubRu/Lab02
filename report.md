@@ -4,51 +4,51 @@
 
 ## Tasks
 
-- [X] 1. Ознакомиться со ссылками учебного материала
-- [X] 2. Выполнить инструкцию учебного материала
-- [X] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
+- [ ] 1. Ознакомиться со ссылками учебного материала
+- [ ] 2. Выполнить инструкцию учебного материала
+- [ ] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
  
 ## Tutorial
 
 ```bash
-$ export GITHUB_USERNAME=17viu18m
-$ export GIST_TOKEN=TOPSECRET
-$ alias edit=nano
+$ export GITHUB_USERNAME=<имя_пользователя> //создание временных переменных с именем пользователся и токеном
+$ export GIST_TOKEN=<сохраненный_токен>
+$ alias edit=<nano|vi|vim|subl>  //создание псевдонима для редактора
 ```
 
 ```ShellSession
-$ mkdir -p ${GITHUB_USERNAME}/workspace
-$ cd ${GITHUB_USERNAME}/workspace
-$ pwd
-$ cd ..
+$ mkdir -p ${GITHUB_USERNAME}/workspace //создание директории
+$ cd ${GITHUB_USERNAME}/workspace       //переход в эту директорию
+$ pwd                                   //вывод текущего пути
+$ cd ..                                 //поднятие на уровень выше
 $ pwd
 ```
 
 ```ShellSession
-$ mkdir -p workspace/tasks/
+$ mkdir -p workspace/tasks/     //создание диреткорий workspace projects reports в worksapce
 $ mkdir -p workspace/projects/
 $ mkdir -p workspace/reports/
-$ cd workspace
+$ cd workspace                  //переход в workspace
 ```
 
 ```ShellSession
 # Debian
-$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
-$ tar -xf node-v6.11.5-linux-x64.tar.xz
-$ rm -rf node-v6.11.5-linux-x64.tar.xz
-$ mv node-v6.11.5-linux-x64 node
+$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz //загрузка файла с сайта
+$ tar -xf node-v6.11.5-linux-x64.tar.xz  //разорхивирование
+$ rm -rf node-v6.11.5-linux-x64.tar.xz   //удаление архива
+$ mv node-v6.11.5-linux-x64 node         //переименование файла
 ```
 
 ```ShellSession
-$ ls node/bin 
-$ echo ${PATH}
-$ export PATH=${PATH}:`pwd`/node/bin
-$ echo ${PATH}
-$ mkdir scripts
-$ cat > scripts/activate<<EOF
+$ ls node/bin                            //вывод содержимого директории
+$ echo ${PATH}                           //вывод всех диреткторий
+$ export PATH=${PATH}:`pwd`/node/bin     //добавление директории в PATH
+$ echo ${PATH}                          
+$ mkdir scripts                          //создание директории scripts в workspace
+$ cat > scripts/activate<<EOF            //создание скрипта по добавлению директории
 export PATH=\${PATH}:`pwd`/node/bin
 EOF
-$ source scripts/activate
+$ source scripts/activate                //активация скрипта
 ```
 
 ```ShellSession
@@ -57,7 +57,7 @@ $ ls node/bin
 ```
 
 ```ShellSession
-$ cat > ~/.gistup.json <<EOF
+$ cat > ~/.gistup.json <<EOF             //добавление токена
 {
   "token": "${GIST_TOKEN}"
 }
@@ -73,7 +73,7 @@ $ mkdir reports/lab${LAB_NUMBER}
 $ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
 $ cd reports/lab${LAB_NUMBER}
 $ edit REPORT.md
-$ gistup -m "lab${LAB_NUMBER}"
+$ gistup -m "lab${LAB_NUMBER}" # enter: yes↵
 ```
 
 ## Links
