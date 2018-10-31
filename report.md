@@ -64,7 +64,7 @@ $ cat > ~/.gistup.json <<EOF             //добавление токена
 EOF
 ```
 
-## Report
+## Result
 
 ```ShellSession
 $ export LAB_NUMBER=02
