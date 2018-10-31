@@ -4,16 +4,16 @@
 
 ## Tasks
 
-- [X] 1. Ознакомиться со ссылками учебного материала
-- [X] 2. Выполнить инструкцию учебного материала
-- [X] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
+- [х] 1. Ознакомиться со ссылками учебного материала
+- [х] 2. Выполнить инструкцию учебного материала
+- [х] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
  
 ## Tutorial
 
 ```bash
-$ export GITHUB_USERNAME=17viu18m
-$ export GIST_TOKEN=TOPSECRET
-$ alias edit=nano
+$ export GITHUB_USERNAME=<имя_пользователя>
+$ export GIST_TOKEN=<сохраненный_токен>
+$ alias edit=<nano|vi|vim|subl>
 ```
 
 ```ShellSession
@@ -80,42 +80,42 @@ $ gistup -m "lab${LAB_NUMBER}"
 
 ### Unix commands
 
-- [ar](https://en.wikipedia.org/wiki/Ar_(Unix))
-- [cat](https://en.wikipedia.org/wiki/Cat_(Unix))
-- [cd](https://en.wikipedia.org/wiki/Cd_(command))
-- [cp](https://en.wikipedia.org/wiki/Cp_(Unix))
-- [cut](https://en.wikipedia.org/wiki/Cut_(Unix))
-- [echo](https://en.wikipedia.org/wiki/Echo_(command))
-- [env](https://en.wikipedia.org/wiki/Env_(shell))
-- [ex](https://en.wikipedia.org/wiki/Ex_(editor))
-- [file](https://en.wikipedia.org/wiki/File_(command))
-- [find](https://en.wikipedia.org/wiki/Find)
-- [ls](https://en.wikipedia.org/wiki/Ls)
-- [man](https://en.wikipedia.org/wiki/Man_page)
-- [mkdir](https://en.wikipedia.org/wiki/Mkdir)
-- [mv](https://en.wikipedia.org/wiki/Mv)
-- [nm](https://en.wikipedia.org/wiki/Nm_(Unix))
-- [ps](https://en.wikipedia.org/wiki/Ps_(Unix))
-- [pwd](https://en.wikipedia.org/wiki/Pwd)
-- [rm](https://en.wikipedia.org/wiki/Rm_(Unix))
-- [sed](https://en.wikipedia.org/wiki/Sed)
-- [touch](https://en.wikipedia.org/wiki/Touch_(Unix))
+- [ar](https://en.wikipedia.org/wiki/Ar_(Unix)) (архиватор)
+- [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) (выводит последовательно указанные файлы, объединяя их в единый поток)
+- [cd](https://en.wikipedia.org/wiki/Cd_(command)) (изменение текущего рабочего каталога)
+- [cp](https://en.wikipedia.org/wiki/Cp_(Unix)) (копирование)
+- [cut](https://en.wikipedia.org/wiki/Cut_(Unix)) (выбор нужного элемента таблицы)
+- [echo](https://en.wikipedia.org/wiki/Echo_(command)) (выводит текст)
+- [env](https://en.wikipedia.org/wiki/Env_(shell)) (позволяет модифицировать список переменных окружения перед исполнением пользовательской команды)
+- [ex](https://en.wikipedia.org/wiki/Ex_(editor)) (текстовый редактор с возможностью экранного редактирования)
+- [file](https://en.wikipedia.org/wiki/File_(command)) (определяет тип файла)
+- [find](https://en.wikipedia.org/wiki/Find) (утилита поиска файлов по имени и другим свойствам)
+- [ls](https://en.wikipedia.org/wiki/Ls) (печатает в стандартный вывод содержимое каталогов)
+- [man](https://en.wikipedia.org/wiki/Man_page) (форматирование и вывод справочных страниц)
+- [mkdir](https://en.wikipedia.org/wiki/Mkdir) (создание нового каталога)
+- [mv](https://en.wikipedia.org/wiki/Mv) (используется для перемещения или переименования файлов)
+- [nm](https://en.wikipedia.org/wiki/Nm_(Unix)) (печатает информацию о бинарных файлах)
+- [ps](https://en.wikipedia.org/wiki/Ps_(Unix)) (выводит отчет о работающих процессах)
+- [pwd](https://en.wikipedia.org/wiki/Pwd) (выводит полный путь от корневого каталога к текущему рабочему каталогу)
+- [rm](https://en.wikipedia.org/wiki/Rm_(Unix)) (используется для удаления файлов)
+- [sed](https://en.wikipedia.org/wiki/Sed) (потоковый текстовый редактор)
+- [touch](https://en.wikipedia.org/wiki/Touch_(Unix)) (используется для создания пустых файлов)
 
 ### Package Managers
 
-- [apt](http://help.ubuntu.ru/wiki/apt) | [dnf](https://en.wikipedia.org/wiki/DNF_(software)) | [yum](https://fedoraproject.org/wiki/Yum/ru)
-- [brew](https://brew.sh) | [linuxbrew](http://linuxbrew.sh)
-- [npm](https://docs.npmjs.com)
+- [apt](http://help.ubuntu.ru/wiki/apt) | [dnf](https://en.wikipedia.org/wiki/DNF_(software)) | [yum](https://fedoraproject.org/wiki/Yum/ru) (наборы утилит для управления программными пакетами)
+- [brew](https://brew.sh) | [linuxbrew](http://linuxbrew.sh) (установщики нужных пакетов)
+- [npm](https://docs.npmjs.com) (пакетный менеджер для javascript)
 
 ### Software
 
-- [curl](https://www.gitbook.com/book/bagder/everything-curl/details)
-- [wget](https://www.gnu.org/software/wget/manual/wget.pdf)
-- [clang](https://clang.llvm.org)
-- [g++](https://gcc.gnu.org/onlinedocs/gcc-4.0.2/gcc/G_002b_002b-and-GCC.html)
-- [make](https://en.wikipedia.org/wiki/Make_(software))
-- [open](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/open.1.html)
-- [openssl](https://www.openssl.org)
-- [nano](https://www.nano-editor.org)
-- [tree](https://linux.die.net/man/1/tree)
-- [vim](http://www.vim.org)
+- [curl](https://www.gitbook.com/book/bagder/everything-curl/details) (позволяет взаимодействовать с множеством серверов по множеству протоколов с синтаксисом URL)
+- [wget](https://www.gnu.org/software/wget/manual/wget.pdf) (консольная программа для загрузки файлов по сети)
+- [clang](https://clang.llvm.org) (фронтенд для загрузки файлов по сети)
+- [g++](https://gcc.gnu.org/onlinedocs/gcc-4.0.2/gcc/G_002b_002b-and-GCC.html) (компилятор)
+- [make](https://en.wikipedia.org/wiki/Make_(software)) (автоматизирует процесс преобразования файлов из одной формы в другую.Чаще всего это компиляция исходного кода в объектные файлы и последующая компоновка в исполняемые файлы или библеотеки.)
+- [open](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/open.1.html) (открывает файл)
+- [openssl](https://www.openssl.org) (криптографический пакет)
+- [nano](https://www.nano-editor.org) (консольный текстовый редактор)
+- [tree](https://linux.die.net/man/1/tree) (рекурсивный каталог)
+- [vim](http://www.vim.org) (текстовый редактор)
