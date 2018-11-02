@@ -119,7 +119,3 @@ $ gistup -m "lab${LAB_NUMBER}"
 - [nano](https://www.nano-editor.org)
 - [tree](https://linux.die.net/man/1/tree)
 - [vim](http://www.vim.org)
-
-```
-Copyright (c) 2017 Братья Вершинины
-```
